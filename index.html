@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giveaway Promotion</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(-45deg,#4f46e5,#3b82f6,#06b6d4,#7c3aed);
+background-size:400% 400%;
+animation:bgMove 15s ease infinite;
+overflow-x:hidden;
+color:#fff;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffe066;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:100px 20px;
+text-align:center;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+padding:45px;
+border-radius:25px;
+max-width:650px;
+box-shadow:0 20px 50px rgba(0,0,0,.25);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-12px);
+}
+}
+
+.gift{
+font-size:90px;
+display:inline-block;
+animation:gift 2.5s ease-in-out infinite;
+filter:drop-shadow(0 0 18px rgba(255,255,255,.7));
+}
+
+@keyframes gift{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-12px) scale(1.08);
+}
+}
+
+h1{
+font-size:48px;
+margin:20px 0;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+opacity:.95;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:18px 45px;
+background:#fff;
+color:#2563eb;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+animation:pulse 1.8s infinite;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(255,255,255,.8);}
+70%{box-shadow:0 0 0 22px rgba(255,255,255,0);}
+100%{box-shadow:0 0 0 0 rgba(255,255,255,0);}
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:38px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.box{
+background:rgba(255,255,255,.12);
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.3s;
+}
+
+.box:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,.2);
+}
+
+.box span{
+font-size:50px;
+display:block;
+margin-bottom:15px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:rgba(255,255,255,.12);
+padding:30px;
+border-radius:18px;
+}
+
+.number{
+font-size:42px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.particle{
+position:fixed;
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+opacity:.5;
+animation:rise linear infinite;
+}
+
+@keyframes rise{
+from{
+transform:translateY(110vh);
+}
+to{
+transform:translateY(-10vh);
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🎁 Amerudinz Giveaway</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#features">Features</a>
+<a href="#stats">Statistics</a>
+</nav>
+
+</header>
+
+<div id="particles"></div>
+
+<section class="hero">
+
+<div class="card">
+
+<div class="gift">🎁</div>
+
+<h1>Official Giveaway</h1>
+
+<p>
+Join our promotional campaign by completing the registration process through our partner. Please review all information carefully before participating.
+</p>
+
+<a class="btn" href="#">
+REGISTER NOW
+</a>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">Why Join?</h2>
+
+<div class="features">
+
+<div class="box">
+<span>🎉</span>
+<h3>Special Promotions</h3>
+<p>Participate in ongoing promotional campaigns.</p>
+</div>
+
+<div class="box">
+<span>⚡</span>
+<h3>Fast Registration</h3>
+<p>Complete the registration process in just a few steps.</p>
+</div>
+
+<div class="box">
+<span>🔒</span>
+<h3>Secure Process</h3>
+<p>Your information is handled according to the applicable policy.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2 class="title">Campaign</h2>
+
+<div class="stats">
+
+<div class="stat">
+<div class="number">10K+</div>
+Participants
+</div>
+
+<div class="stat">
+<div class="number">25+</div>
+Countries
+</div>
+
+<div class="stat">
+<div class="number">24/7</div>
+Support
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h2 class="title">Frequently Asked Questions</h2>
+
+<div class="features">
+
+<div class="box">
+<h3>How do I participate?</h3>
+<p>Click the registration button and follow the instructions provided on the next page.</p>
+</div>
+
+<div class="box">
+<h3>Is registration easy?</h3>
+<p>Yes. The registration process only takes a few simple steps.</p>
+</div>
+
+<div class="box">
+<h3>Where can I get support?</h3>
+<p>You can contact our support team using the information provided below.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Contact</h2>
+
+<div class="features">
+
+<div class="box">
+<span>📧</span>
+<h3>Email</h3>
+<p>support@example.com</p>
+</div>
+
+<div class="box">
+<span>🌐</span>
+<h3>Website</h3>
+<p>www.example.com</p>
+</div>
+
+<div class="box">
+<span>💬</span>
+<h3>Support</h3>
+<p>Available Online</p>
+</div>
+
+</div>
+
+</section>
+
+<footer style="padding:40px 20px;background:rgba(0,0,0,.25);text-align:center;">
+
+<p style="margin-bottom:15px;">
+© 2026 Giveaway Promotion. All Rights Reserved.
+</p>
+
+<p style="font-size:14px;opacity:.8;">
+Privacy Policy | Terms & Conditions | Contact Us
+</p>
+
+</footer>
+
+<script>
+
+const particleContainer=document.getElementById("particles");
+
+for(let i=0;i<40;i++){
+
+let p=document.createElement("div");
+
+p.className="particle";
+
+p.style.left=Math.random()*100+"%";
+
+p.style.animationDuration=(8+Math.random()*8)+"s";
+
+p.style.animationDelay=Math.random()*6+"s";
+
+p.style.opacity=Math.random();
+
+p.style.width=(4+Math.random()*8)+"px";
+
+p.style.height=p.style.width;
+
+particleContainer.appendChild(p);
+
+}
+
+const boxes=document.querySelectorAll(".box");
+
+window.addEventListener("scroll",()=>{
+
+boxes.forEach(box=>{
+
+const top=box.getBoundingClientRect().top;
+
+if(top<window.innerHeight-80){
+
+box.style.transform="translateY(0)";
+box.style.opacity="1";
+
+}
+
+});
+
+});
+
+boxes.forEach(box=>{
+
+box.style.opacity="0";
+
+box.style.transform="translateY(40px)";
+
+box.style.transition=".8s";
+
+});
+
+</script>
+
+</body>
+</html>
